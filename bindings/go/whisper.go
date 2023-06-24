@@ -10,6 +10,8 @@ import (
 
 /*
 #cgo LDFLAGS: -lwhisper -lm -lstdc++
+#cgo darwin,amd64 LDFLAGS: -L${SRCDIR}/libs/darwin_x86_64
+#cgo darwin,arm64 LDFLAGS: -L${SRCDIR}/libs/darwin_arm64
 #cgo darwin LDFLAGS: -framework Accelerate
 #include <whisper.h>
 #include <stdlib.h>
